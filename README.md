@@ -18,6 +18,3 @@
 ### Pré-Requisitos
 
 - **Instrução**: Siga as instruções para não ocorrer nenhuma erro!
-- ```bash
-  pip install -r requirements.txt
-  ```
