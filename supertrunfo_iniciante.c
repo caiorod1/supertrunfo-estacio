@@ -9,6 +9,8 @@ int main(){
     float area, area2;  // area da cidade //PIB da cidade 
     int turistico, turistico2; // pontos turisticos da cidade
     char estado[5], estado2[5];
+    float pib_percapita, pib_percapita2; //     pib / população
+    float densidade_populacional, densidade_populacional2;   // pupulação / área da cidade
 
 // Aprensetação do jogo.
 printf("Bem-Vindo ao jogo Super Trunfo Paises.\n");
@@ -80,6 +82,12 @@ printf("\tPopulação: %.0lf\n", populacao);
 printf("\tÁrea: %.2f km²\n", area);
 printf("\tPIB: %.2lf bilhões\n", PIB);
 printf("\tPontos turisticos: %d\n", turistico);
+pib_percapita = PIB / populacao;
+densidade_populacional =  populacao / area;
+printf("\tPIB per capita:%.2f hab/m²\n", pib_percapita);
+printf("\tDensidade Populacional: R$ %.2f reais", densidade_populacional);
+
+
 
 // Apresentação da carta 2
 printf("\nCARTA 2: \n");
@@ -91,6 +99,11 @@ printf("\tPopulação: %.0lf\n", populacao2);
 printf("\tÁrea: %.2f km²\n", area2);
 printf("\tPIB: %.2lf bilhões\n", PIB2);
 printf("\tPontos turisticos: %d\n", turistico2);
+pib_percapita2 = PIB2 / populacao2;
+densidade_populacional2 =  populacao2 / area2;
+printf("\tPIB per capita: %.2f hab/m²\n", pib_percapita2);
+printf("\tDensidade Populacional: R$ %.2f reais", densidade_populacional2);
+
 
 
 return 0;
